@@ -1,2 +1,3 @@
 # DMAS
-Des Moines Astronoomical Society Projects
+This is a repository for Des Moines Astronomical Society Projects
+
