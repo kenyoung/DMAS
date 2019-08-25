@@ -1,0 +1,19 @@
+1) Measure the receiver temperature
+   a) We should try to get some absorber material like ECCOSORB® MCS
+   b) Mount the ECCOSORB on wands that will allow us to block the receiver
+   beam.
+   c) Get dry ice to cool one of the ECCOSORB wands
+
+2) Detect the Moon
+   a) Once we know the receiver temperature is low enough, we can calculate
+   whether or not we should be able to detect the Moon.
+
+3) Measure the beam size
+   a) Use a series of drift scans on the Moon to measure the beam, which
+   will allow us to check that the optical alignment is at least roughtly
+   correct.
+
+4) Measure the illumination taper
+   a) Use ECCOSORB to verify that the reciever illumination of the dish
+   is uniform, with a sensible taper.
+
