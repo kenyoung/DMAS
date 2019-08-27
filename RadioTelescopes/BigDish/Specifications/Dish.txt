@@ -1,0 +1,2 @@
+Diameter: 2.33 meters
+Half power beam width at 21.1 cm: 6 degrees assuming tapered to 1/3 at edge
