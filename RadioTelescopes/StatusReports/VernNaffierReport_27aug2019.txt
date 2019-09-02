@@ -1,0 +1,46 @@
+RADIO TELESCOPE REPORT - Vern Naffier
+
+   Progress has admittedly been slow on bringing our radio telescope projects up
+to operational status in part because of a number of expansions of the project
+along the way and in part also because of occurring problems that have had, and
+continue, to need attention. But progress is being made. This summer I built a
+cabinet to house the electronic equipment for the three radio telescopes under
+construction, and I re-outfitted a stand to support and move one of the small
+radio telescope antennas. A problem was encountered with the axis motor on the
+large dish antenna in the observatory yard. Early in this year I had built a
+36 volt power supply with reversible polarity switching. Late this summer, when
+I hooked the power supply to the axis motor, nothing happened; the motor would
+not turn to move the dish. I took the axis assembly home, thanks to Larry
+Musselman and Dave lynch for dismounting it, to work on it. I finally got the
+motor to work by bypassing an electrical diodes and switches frontend of the
+motor which was made for TV satellite purposes but not for use as a radio
+telescope. I wired power directly to the motor, and, voila, the motor worked.
+By toggling the polarity switch on the power supply the motor was able to run
+in reverse directions. On Saturday, August 24, Larry and Dave remounted the
+axis assembly including the motor, and to our disappointment the motor was not
+able to push an extension arm outward to move the dish. The threaded arm or a
+worm gear may be locked up. At this point in time the axis assembly has to be
+dismounted again and taken apart for checking. Apart from this problem the
+large dish 1.42 GHz radio telescope should be ready for elementary operation.
+
+   We also have a small dish radio telescope which uses a 32 inch dish and
+feedhorn tuned to 12 GHz. The scope is in partial working condition in that we
+are able to take meter and audio readings of solar microwave radiation. But an
+additional feature of this radio telescope is the ability to capture strip
+chart registrations on a computer screen through the use of Radio Skypipe
+software. That cannot be accomplished by direct hookup of the signal strength
+receiver to the computer’s Skypipe software. Connection can only be made
+through an interface which converts the changing audio frequency of the
+Channel Master signal strength receiver into an amplitude changing signal
+that is then fed into the sound card of the computer. I took it upon myself to
+home build an electronic interface from instructions which I came across in an
+ARRL publication. Unfortunately, I found that one of the chips required in the
+circuitry was no longer available, nor was an exact replacement for it
+available. I substituted a chip that had similar characteristics but a much
+lower digital potentiometer resistance (10 ohms instead of 50 ohms).
+Result: I think this may be the reason the interface is not functioning as it
+should. This is still a problem I am working on.
+
+   Not much more work needs to be done on the JOVE radio telescope with loop
+antenna constructed by Dave Lynch to make it operational. This scope also
+requires a computer with Skypipe software.
