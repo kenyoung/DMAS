@@ -51,7 +51,7 @@ your machine.   For our git repository, stored on GitHub, the command is
 git clone https://github.com/kenyoung/DMAS
 
 Note that anyone in the world can execute this command, and get a copy of our
-repository.   So don't put any personal informating in it!   Like the config
+repository.   So don't put any personal information in it!   Like the config
 command, you will only need to execute the git clone command once, and you'll
 have your own, complete copy of the entire repository.   As of Sept. 19, 2019
 the repository requires about 162 MBytes of storage space on your machine.
@@ -77,7 +77,7 @@ When you modify files or add new ones, they do not automatically become
 part of the repository.   They are in what is called the staging area.
 Once you have edited the files you wish to work on (at this time), and added
 any new files, you need to commit your changes, which puts them into your
-local copy of the respository.   Although you can commit individual files,
+local copy of the repository.   Although you can commit individual files,
 the easiest thing is to just commit all the files that you have modified
 at once.   The command to do that is
 
@@ -93,7 +93,7 @@ effect on the master copy of the repository which is stored on GitHub.
 5) git status
 
 git status isn't actually essential, but it is handy.   It will tell you
-which files have been modified, but not yet commited to the repository.
+which files have been modified, but not yet committed to the repository.
 It will also warn you if it sees new files in the DMAS directory tree which
 have not yet been added via the git add command.   This command doesn't
 change the repository inn any way.
