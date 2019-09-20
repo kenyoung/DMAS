@@ -1,0 +1,126 @@
+Below is a list of the most important git commands.   If you are going to use
+the command line interface to git, I think the set of commands below is the
+minimal set you must be familiar with.   A more complete list of the commands,
+with examples, is available here:
+
+https://dzone.com/articles/top-20-git-commands-with-examples .
+
+Git has a lot of features, the vast majority of which I don't believe we will
+ever want or need to use with the DMAS repository.
+
+
+1) git config
+
+git config tells the git system a few things about you, most importantly your
+name and email address.   git needs to know these things, because when you
+modify the repository, it must be able to record who made the changes, and the
+associated email address.   At a minimum, you should execute the following two
+commands before doing your first commit (see below) to the repository.   It's
+probably best to do these commands right after installing the git software.
+
+Example (for me, obviously you should substitute your own name and email
+address):
+
+git config --global user.name "Ken Young"
+git config --global user.email "kyoung@cfa.harvard.edu"
+
+You can also use the git config command to specify which editor to use.
+If you don't do this, git will use a pretty lousy editor that comes bundled
+with the git software.  It's not a hopeless editor, but who wants to learn how
+to use a new editor just for git?   The editor is used to allow you to type
+in comments when you do the commit command, and the comments should describe
+what changes you have made. If, for example, you like the emacs editor,
+execute the command
+
+git config --global core.editor emacs
+
+if you're using Microsoft Windows, and you'd like to use the Notepad editor,
+execute
+
+git config --global core.editor notepad
+
+You only need to do these config commands once, unless you want to change the
+values that you initially supplied.
+
+
+2) git clone
+
+git clone will allow you to make a a local copy of the DMAS git repository on
+your machine.   For our git repository, stored on GitHub, the command is
+
+git clone https://github.com/kenyoung/DMAS
+
+Note that anyone in the world can execute this command, and get a copy of our
+repository.   So don't put any personal informating in it!   Like the config
+command, you will only need to execute the git clone command once, and you'll
+have your own, complete copy of the entire repository.   As of Sept. 19, 2019
+the repository requires about 162 MBytes of storage space on your machine.
+
+
+3) git add
+
+git add allows you to add a new file to the repository.   You do not need
+to do this if you are just modifying a file which is already in the repository.
+You should also use this command to add any new directories (folders) that
+you create.   The file you add must be within the directory tree of the
+git repository (which in our case has the directory DMAS as the top
+of the directory tree).   To add a file named [filename], change your
+working directory to the directory containing the new file, and execute
+the command
+
+git add [filename]
+
+
+4) git commit
+
+When you modify files or add new ones, they do not automatically become
+part of the repository.   They are in what is called the staging area.
+Once you have edited the files you wish to work on (at this time), and added
+any new files, you need to commit your changes, which puts them into your
+local copy of the respository.   Although you can commit individual files,
+the easiest thing is to just commit all the files that you have modified
+at once.   The command to do that is
+
+git commit -a
+
+When you issue that command, you will be popped into an editor.  You should
+use the editor to type in a message explaining the changes that you have made.
+When you exit the editor, the commit command will complete.   Note that
+this only modifies your local, private copy of the repository - it has no
+effect on the master copy of the repository which is stored on GitHub.
+
+
+5) git status
+
+git status isn't actually essential, but it is handy.   It will tell you
+which files have been modified, but not yet commited to the repository.
+It will also warn you if it sees new files in the DMAS directory tree which
+have not yet been added via the git add command.   This command doesn't
+change the repository inn any way.
+
+
+6) git push
+
+git push will put your changes to the repository into the master repository
+on GitHub.   Note that you must have an account on GitHub to be allowed to
+do this, and you must send me your GitHub username so that I can add you to
+the list of people who are authorized to modify the repository.   To do the
+git push, set your working directory to the top, DMAS, directory and
+execute the command
+
+git push origin master
+
+You will be prompted for your GitHub username and password.   Note that if
+someone else has modified the master copy of the repository, and your local
+copy of the repository is out-of-sync with theirs, you may get a message
+saying you need to do a git pull (see below) before doing your git push.
+
+
+7) git pull
+
+git pull will update your local copy of the repository with any changes that
+other users have made and pushed to the GitHub master copy.   The full
+command is
+
+git pull origin master
+
