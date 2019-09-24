@@ -1,3 +1,4 @@
 Diameter: 2.31 meters
 Focal length 0.8763 meters - f 0.379
 Half power beam width at 21.1 cm: 6 degrees assuming tapered to 1/3 at edge
+Estimated spectral flux density to antenna temperature conversion factor: 886 Jy/K
